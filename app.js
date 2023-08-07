@@ -4,6 +4,7 @@ const inputSearch = document.querySelector('.form-search input')
 const ul = document.querySelector('ul')
 
 //adicionando listener de evento
+//adicionando todo com evento submit
 form.addEventListener('submit', event=> {
   event.preventDefault()
 
@@ -21,6 +22,8 @@ form.addEventListener('submit', event=> {
   event.target.reset()
 })
 
+//adicionando evento á ul
+//removendo lis através do evento click
 ul.addEventListener('click', event => {
   const clickedElement = event.target
   
@@ -29,6 +32,8 @@ ul.addEventListener('click', event => {
  }
 })
 
+//adicionando evento input
+//buscando por Todos da lista 
 inputSearch.addEventListener('input',event => {
   const inputValue = event.target.value.trim().toLowerCase()
 
